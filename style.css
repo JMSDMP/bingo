@@ -27,6 +27,9 @@ body {
     }
 }
 
+:root {
+  color-scheme: light dark;
+}
 
 table {
     width: var(--table-width);
