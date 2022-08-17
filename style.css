@@ -1,0 +1,75 @@
+:root {
+    --table-width: 495px;
+    --table-height: 165px;
+    --cell-width: 55px;
+    --cell-height: 55px;  
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1010px) {
+    :root {
+        --table-width: 999px;
+        --table-height: 333px;
+        --cell-width: 111px;
+        --cell-height: 111px;
+    }
+
+}
+
+@media (min-width: 760px) and (max-width: 1009px) {
+    :root {
+        --table-width: 747px;
+        --table-height: 249px;
+        --cell-width: 83px;
+        --cell-height: 83px;
+    }
+}
+
+
+table {
+    width: var(--table-width);
+    height: var(--table-height);
+    border: #7777a7 solid 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-spacing: 0;
+    user-select: none;
+}
+
+tr {
+    height: var(--cell-height);
+}
+
+td {
+    width: var(--cell-width);
+    height: var(--cell-height);
+    border: black solid 1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dabber.active {
+    background-color: palevioletred;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height:80%;
+    width:80%;
+    border-radius: 50%; 
+}
+
+.number {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: 2em;
+    
+}

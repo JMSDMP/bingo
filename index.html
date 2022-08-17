@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bingo ticket</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <button onclick="new_nums()">Generate</button>
+        <table>
+            <tr class=row-0>
+                <td class="ticket-number column-0 row-0" id="cell-0" onclick="toggle(0)">
+                    <div class="dabber" id="dabber-0">
+                        <div class="number" id="number-0-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-1 row-0" id="cell-1" onclick="toggle(1)">
+                    <div class="dabber" id="dabber-1">
+                        <div class="number" id="number-1-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-2 row-0" id="cell-2" onclick="toggle(2)">
+                    <div class="dabber" id="dabber-2">
+                        <div class="number" id="number-2-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-3 row-0" id="cell-3" onclick="toggle(3)">
+                    <div class="dabber" id="dabber-3">
+                        <div class="number" id="number-3-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-4 row-0" id="cell-4" onclick="toggle(4)">
+                    <div class="dabber" id="dabber-4">
+                        <div class="number" id="number-4-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-5 row-0" id="cell-5" onclick="toggle(5)">
+                    <div class="dabber" id="dabber-5">
+                        <div class="number" id="number-5-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-6 row-0" id="cell-6" onclick="toggle(6)">
+                    <div class="dabber" id="dabber-6">
+                        <div class="number" id="number-6-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-7 row-0" id="cell-7" onclick="toggle(7)">
+                    <div class="dabber" id="dabber-7">
+                        <div class="number" id="number-7-0">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-8 row-0" id="cell-8" onclick="toggle(8)">
+                    <div class="dabber" id="dabber-8">
+                        <div class="number" id="number-8-0">-</div>
+                    </div>
+                </td>
+            </tr>
+            <tr class=row-1>
+                <td class="ticket-number column-0 row-1" id="cell-9" onclick="toggle(9)">
+                    <div class="dabber" id="dabber-9">
+                        <div class="number" id="number-0-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-1 row-1" id="cell-10" onclick="toggle(10)">
+                    <div class="dabber" id="dabber-10">
+                        <div class="number" id="number-1-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-2 row-1" id="cell-11" onclick="toggle(11)">
+                    <div class="dabber" id="dabber-11">
+                        <div class="number" id="number-2-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-3 row-1" id="cell-12" onclick="toggle(12)">
+                    <div class="dabber" id="dabber-12">
+                        <div class="number" id="number-3-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-4 row-1" id="cell-13" onclick="toggle(13)">
+                    <div class="dabber" id="dabber-13">
+                        <div class="number" id="number-4-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-5 row-1" id="cell-14" onclick="toggle(14)">
+                    <div class="dabber" id="dabber-14">
+                        <div class="number" id="number-5-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-6 row-1" id="cell-15" onclick="toggle(15)">
+                    <div class="dabber" id="dabber-15">
+                        <div class="number" id="number-6-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-7 row-1" id="cell-16" onclick="toggle(16)">
+                    <div class="dabber" id="dabber-16">
+                        <div class="number" id="number-7-1">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-8 row-1" id="cell-17" onclick="toggle(17)">
+                    <div class="dabber" id="dabber-17">
+                        <div class="number" id="number-8-1">-</div>
+                    </div>
+                </td>
+            </tr>
+            <tr class=row-2>
+                <td class="ticket-number column-0 row-2" id="cell-18" onclick="toggle(18)">
+                    <div class="dabber" id="dabber-18">
+                        <div class="number" id="number-0-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-1 row-2" id="cell-19" onclick="toggle(19)">
+                    <div class="dabber" id="dabber-19">
+                        <div class="number" id="number-1-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-2 row-2" id="cell-20" onclick="toggle(20)">
+                    <div class="dabber" id="dabber-20">
+                        <div class="number" id="number-2-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-3 row-2" id="cell-21" onclick="toggle(21)">
+                    <div class="dabber" id="dabber-21">
+                        <div class="number" id="number-3-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-4 row-2" id="cell-22" onclick="toggle(22)">
+                    <div class="dabber" id="dabber-22">
+                        <div class="number" id="number-4-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-5 row-2" id="cell-23" onclick="toggle(23)">
+                    <div class="dabber" id="dabber-23">
+                        <div class="number" id="number-5-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-6 row-2" id="cell-24" onclick="toggle(24)">
+                    <div class="dabber" id="dabber-24">
+                        <div class="number" id="number-6-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-7 row-2" id="cell-25" onclick="toggle(25)">
+                    <div class="dabber" id="dabber-25">
+                        <div class="number" id="number-7-2">-</div>
+                    </div>
+                </td>
+                <td class="ticket-number column-8 row-2" id="cell-26" onclick="toggle(26)">
+                    <div class="dabber" id="dabber-26">
+                        <div class="number" id="number-8-2">-</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
